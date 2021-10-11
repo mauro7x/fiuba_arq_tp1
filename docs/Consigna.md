@@ -43,8 +43,8 @@ donde `<filename>` es el nombre del archivo con el escenario (sin la extensión 
 ### Tipos de endpoints para comparar los servidores
 
 | Caso              | Implementado como                                                  | Representa                                                                                |
-| ----------------- | ------------------------------------------------------------------ | ----------------------------------------------------------------------------------------- | --- |
-| Ping              | Respuesta de un valor constante (rápido y de procesamiento mínimo) | Healthcheck básico                                                                        |     |
+| ----------------- | ------------------------------------------------------------------ | ----------------------------------------------------------------------------------------- |
+| Ping              | Respuesta de un valor constante (rápido y de procesamiento mínimo) | Healthcheck básico                                                                        |
 | Proxy sincrónico  | Invocación a servicio sincrónico provisto por la cátedra.          | Aproximación a consumo de servicio real sincrónico.                                       |
 | Proxy asincrónico | Invocación a servicio asincrónico provisto por la cátedra.         | Aproximación a consumo de servicio real asincrónico.                                      |
 | Intensivo         | Loop de cierto tiempo (lento y de alto procesamiento)              | Cálculos pesados sobre los datos (ej: algoritmos pesados, o simplemente muchos cálculos). |
