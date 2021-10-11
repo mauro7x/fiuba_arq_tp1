@@ -3,8 +3,6 @@ version: '2'
 services:
   app:
     build: ./app
-    ports:
-      - '3000:3000'
     links:
       - bbox
     command: sh -c 'npm run dev'
