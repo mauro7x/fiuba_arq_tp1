@@ -1,0 +1,9 @@
+# Ignore artifacts
+**/build/
+**/coverage/
+
+# Node/npm
+**/node_modules/
+
+# Custom
+**/*.config.js

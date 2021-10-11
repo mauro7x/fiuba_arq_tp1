@@ -15,20 +15,20 @@ server.basePort=9090
 group.key=
 ```
 
--   **server.basePort**: Puerto base para que escuchen los servicios _en el container_. En el ejemplo, el 1er servicio escuchará en 9090 y el 2do en 9091.
--   **group.key**: Cadena alfanumérica que identifica al grupo. Se recomienda que utilicen el nombre del grupo, aunque pueden usar cualquier cadena.
+- **server.basePort**: Puerto base para que escuchen los servicios _en el container_. En el ejemplo, el 1er servicio escuchará en 9090 y el 2do en 9091.
+- **group.key**: Cadena alfanumérica que identifica al grupo. Se recomienda que utilicen el nombre del grupo, aunque pueden usar cualquier cadena.
 
 El archivo que utilicen **debe ser subido al repositorio**.
 
 Para _probar manualmente_ la interacción con los servicios, tienen 2 opciones:
 
--   Mapear los puertos al host: Deben asignar un puerto del host a cada puerto del container
--   Pasar a través de nginx: Deben agregar los upstreams en la configuración de nginx
+- Mapear los puertos al host: Deben asignar un puerto del host a cada puerto del container
+- Pasar a través de nginx: Deben agregar los upstreams en la configuración de nginx
 
 Luego, pueden enviar un GET a cualquier endpoint de cada servicio. Por ejemplo, si mapearon los puertos al host con la misma numeración que el archivo de configuración:
 
--   `curl http://localhost:9090/` accederá al 1er servicio
--   `curl http://localhost:9091/` accederá al 2do servicio
+- `curl http://localhost:9090/` accederá al 1er servicio
+- `curl http://localhost:9091/` accederá al 2do servicio
 
 Si, en cambio, eligieron pasar a través de nginx, entonces deberán enviar un GET a las locations que hayan configurado.
 
@@ -107,9 +107,9 @@ Nos concentraremos en simular la inscripción a una o más materias. Desde el pu
 1. Iniciar sesión
 2. Seleccionar una carrera
 3. Inscribirse (_n_ veces)
-    1. Ver la lista de materias en las que está inscripto
-    2. Ver la lista de materias disponibles
-    3. Inscribirse en una materia
+   1. Ver la lista de materias en las que está inscripto
+   2. Ver la lista de materias disponibles
+   3. Inscribirse en una materia
 4. Cerrar sesión
 
 Para implementar este flujo, herramientas como Artillery (usando [scenarios](https://artillery.io/docs/script-reference/#scenarios)) o JMeter nos permiten simularlo.

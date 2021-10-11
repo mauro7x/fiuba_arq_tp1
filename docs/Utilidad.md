@@ -1,38 +1,38 @@
 # Links útiles
 
--   Nodejs:
-    -   https://nodejs.org/
-    -   https://github.com/creationix/nvm
-    -   https://nodejs.org/dist/latest-v12.x/docs/api/ o https://nodejs.org/dist/latest-v14.x/docs/api/
--   Express:
-    -   https://expressjs.com/en/starter/hello-world.html
--   Nginx:
-    -   https://nginx.org/
--   Docker:
-    -   https://docker-k8s-lab.readthedocs.io/en/latest/docker/docker-engine.html
-    -   https://www.docker.com/
--   Docker-compose:
-    -   https://docs.docker.com/compose/
--   StatsD:
-    -   https://github.com/etsy/statsd
-    -   https://github.com/etsy/statsd/blob/master/docs/graphite.md
--   Graphite:
-    -   https://graphiteapp.org/
-    -   https://graphite.readthedocs.io/en/latest/
--   Grafana:
-    -   https://grafana.com/
-    -   https://docs.grafana.org/guides/getting_started/
--   imagen usada (statsd + graphite):
-    -   https://hub.docker.com/r/graphiteapp/graphite-statsd/
-    -   https://github.com/graphite-project/docker-graphite-statsd
--   Gotchas:
-    -   http://dieter.plaetinck.be/post/25-graphite-grafana-statsd-gotchas/
--   Artillery:
-    -   https://artillery.io/docs/
-    -   https://www.npmjs.com/package/artillery
-    -   https://www.npmjs.com/package/artillery-plugin-statsd
--   JMeter:
-    -   https://jmeter.apache.org/
+- Nodejs:
+  - https://nodejs.org/
+  - https://github.com/creationix/nvm
+  - https://nodejs.org/dist/latest-v12.x/docs/api/ o https://nodejs.org/dist/latest-v14.x/docs/api/
+- Express:
+  - https://expressjs.com/en/starter/hello-world.html
+- Nginx:
+  - https://nginx.org/
+- Docker:
+  - https://docker-k8s-lab.readthedocs.io/en/latest/docker/docker-engine.html
+  - https://www.docker.com/
+- Docker-compose:
+  - https://docs.docker.com/compose/
+- StatsD:
+  - https://github.com/etsy/statsd
+  - https://github.com/etsy/statsd/blob/master/docs/graphite.md
+- Graphite:
+  - https://graphiteapp.org/
+  - https://graphite.readthedocs.io/en/latest/
+- Grafana:
+  - https://grafana.com/
+  - https://docs.grafana.org/guides/getting_started/
+- imagen usada (statsd + graphite):
+  - https://hub.docker.com/r/graphiteapp/graphite-statsd/
+  - https://github.com/graphite-project/docker-graphite-statsd
+- Gotchas:
+  - http://dieter.plaetinck.be/post/25-graphite-grafana-statsd-gotchas/
+- Artillery:
+  - https://artillery.io/docs/
+  - https://www.npmjs.com/package/artillery
+  - https://www.npmjs.com/package/artillery-plugin-statsd
+- JMeter:
+  - https://jmeter.apache.org/
 
 # Pequeño cheatsheet de docker
 

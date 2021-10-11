@@ -1,0 +1,23 @@
+{
+  "name": "fiuba_arq_tp1",
+  "version": "1.0.0",
+  "description": "TP1 - Arquitectura del Software (75.73) - FIUBA",
+  "scripts": {
+    "fmt": "prettier --write '**/*.yml' '**/*.yaml' '**/*.json' '**/*.js' '**/*.md'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mauro7x/fiuba_arq_tp1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mauro7x/fiuba_arq_tp1/issues"
+  },
+  "homepage": "https://github.com/mauro7x/fiuba_arq_tp1#readme",
+  "devDependencies": {
+    "husky": "^7.0.2",
+    "prettier": "2.4.1"
+  }
+}
