@@ -23,11 +23,11 @@ const fetch_bbox = async (port) => {
 
 app.get('/ping', (req, res) => res.sendStatus(200));
 
-app.get('/sync_proxy', async (req, res) =>
+app.get('/bbox1', async (req, res) =>
   res.json(await fetch_bbox(bbox_port.sync))
 );
 
-app.get('/async_proxy', async (req, res) =>
+app.get('/bbox2', async (req, res) =>
   res.json(await fetch_bbox(bbox_port.async))
 );
 
