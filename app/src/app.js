@@ -21,10 +21,7 @@ const fetch_bbox = async (port) => {
   }
 };
 
-app.get('/ping', (req, res) => {
-  res.send(`${process.pid}`);
-  console.log('Respondiendo');
-});
+app.get('/ping', (req, res) => res.sendStatus(200));
 
 app.get('/sync_proxy', async (req, res) =>
   res.json(await fetch_bbox(bbox_port.sync))
