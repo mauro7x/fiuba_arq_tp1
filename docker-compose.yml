@@ -6,6 +6,8 @@ services:
     links:
       - bbox
     command: sh -c 'npm run dev'
+    environment:
+      - N_WORKERS=1
     volumes:
       - ./app/src:/usr/app/src
 
