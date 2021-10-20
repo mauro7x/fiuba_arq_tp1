@@ -9,13 +9,14 @@ config:
     endpoint:
       - 'ping'
 
-  pool: 50 # All HTTP requests from all virtual users will be sent over the same connections
+  pool: 50
 
   phases:
-    - name: Plain
-      duration: 180
-      arrivalRate: 2
-    
+    - name: Ramp
+      duration: 120
+      arrivalRate: 0
+      rampTo: 1000
+
     - name: Clear
       duration: 20
       arrivalRate: 0
@@ -25,3 +26,4 @@ scenarios:
     flow:
       - get:
           url: '/{{ endpoint }}'
+

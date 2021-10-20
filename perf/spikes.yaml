@@ -1,48 +1,39 @@
 config:
-  environments:
-    node:
-      target: 'http://localhost:5555'
-      plugins:
-        statsd:
-          host: localhost
-          port: 8125
-          prefix: 'artillery-node'
+  plugins:
+    statsd:
+      host: localhost
+      port: 8125
+      prefix: 'artillery-node'
+  target: 'http://localhost:5555'
+  variables:
+    endpoint:
+      - 'ping'
 
   pool: 50
 
   phases:
-    - name: WarmUp
-      duration: 10
-      arrivalRate: 5
-
     - name: Base 0
-      duration: 60
+      duration: 45
       arrivalRate: 100
     - name: Spike 1
-      duration: 20
+      duration: 15
       arrivalRate: 1000
     - name: Base 1
-      duration: 60
+      duration: 45
       arrivalRate: 100
     - name: Spike 2
-      duration: 20
+      duration: 15
       arrivalRate: 1000
     - name: Base 2
-      duration: 60
-      arrivalRate: 100
-    - name: Spike 3
-      duration: 20
-      arrivalRate: 1000
-    - name: Base 3
-      duration: 60
+      duration: 45
       arrivalRate: 100
 
-    - name: WindDown
+    - name: Clear
       duration: 10
-      arrivalRate: 5
+      arrivalRate: 0
 
 scenarios:
   - name: endpoint
     flow:
       - get:
-          url: '/ping'
+          url: '/{{ endpoint }}'
