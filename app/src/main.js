@@ -3,7 +3,7 @@ const cluster = require('cluster');
 const server = require('./server');
 const { n_workers, port } = require('./config');
 
-if (cluster.isMaster) {
+if (n_workers > 1 && cluster.isMaster) {
   console.log(`[Master ${process.pid}] Starting workers...`);
 
   for (let i = 0; i < n_workers; i++) {
