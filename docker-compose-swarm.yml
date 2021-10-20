@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  app:
+  node:
     image: nicomatex/app_arqui:1.0
     command: sh -c 'npm run dev'
     volumes:
@@ -24,7 +24,7 @@ services:
       placement:
         constraints: [node.role == manager]
     depends_on:
-      - app
+      - node
 
 volumes:
   grafana_config:
