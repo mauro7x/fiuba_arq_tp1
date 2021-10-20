@@ -10,6 +10,7 @@ services:
       - N_WORKERS=1
     volumes:
       - ./app/src:/usr/app/src
+    scale: 1
 
   bbox:
     image: arqsoft/bbox:202102.1
