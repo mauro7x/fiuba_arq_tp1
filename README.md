@@ -14,7 +14,7 @@ Trabajo Práctico número 1 de la materia **Arquitectura del Software** (75.73),
 
 ## Links :link:
 
-- **Informe:** _pdf (WIP)_ - [overleaf (read-only)](https://es.overleaf.com/read/dqzqyhdkjcwf) - [overleaf (edición)](https://es.overleaf.com/3814845883qxffjvrvzsgj)
+- **Informe:** [_pdf_](./docs/Informe.pdf)
 - Documentación original provista por la cátedra:
   - [Condiciones de entrega](./docs/Entrega.md)
   - [Objetivos](./docs/Objetivos.md)
